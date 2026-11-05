@@ -1,0 +1,29 @@
+using UnityEngine;
+
+public class BoardTilt : MonoBehaviour
+{
+    [SerializeField] float maxTilt = 15f;
+    [SerializeField] float tiltSpeed = 60f;
+    Rigidbody rb;
+    float targetX, targetZ;
+    float currentX, currentZ;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        targetX = v*maxTilt;
+        targetZ = -h *maxTilt;
+    }
+    void FixedUpdate(){
+        currentX = Mathf.MoveTowards(currentX, targetX, tiltSpeed*Time.fixedDeltaTime);
+        currentZ = Mathf.MoveTowards(currentZ, targetZ, tiltSpeed*Time.fixedDeltaTime);
+        rb.MoveRotation(Quaternion.Euler(currentX, 0f, currentZ));
+    }
+}
