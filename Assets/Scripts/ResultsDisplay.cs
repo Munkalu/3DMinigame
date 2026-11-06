@@ -11,7 +11,7 @@ public class ResultsDisplay : MonoBehaviour
             titleText.text = "Level Complete!";
         }
         else{
-            titleText.text = "Out of Lives!";
+            titleText.text = "GAME OVER!";
         }
         statsText.text = "Score: " + GameManager.finalScore;
         
