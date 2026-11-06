@@ -6,6 +6,7 @@ public class FallZone : MonoBehaviour
         if(other.CompareTag("Player")){
             BallController ball = other.GetComponent<BallController>();
             ball.Respawn();
+            GameManager.Instance.LoseLife();
         }
     }
 }
