@@ -6189,7 +6189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64187041cbfa7ef4eb9a533c47f92fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardTilt
-  maxTilt: 15
+  maxTilt: 10
   tiltSpeed: 45
 --- !u!54 &730958698
 Rigidbody:
