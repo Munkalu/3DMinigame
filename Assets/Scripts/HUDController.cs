@@ -8,6 +8,7 @@ public class HUDController : MonoBehaviour
     {
         hudText.text = "Lives: " + GameManager.Instance.Lives+
         "\nScore: " + GameManager.Instance.Score + 
-        "\nTime: " + Mathf.CeilToInt(GameManager.Instance.TimeLeft);  
+        "\nTime: " + Mathf.CeilToInt(GameManager.Instance.TimeLeft)
+        +"\nSeeds Collected: " + GameManager.Instance.SeedsCollected + "/" + GameManager.Instance.TotalSeeds;  
     }
 }

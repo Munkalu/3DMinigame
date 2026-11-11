@@ -7,13 +7,10 @@ public class BoardTilt : MonoBehaviour
     Rigidbody rb;
     float targetX, targetZ;
     float currentX, currentZ;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         float h = Input.GetAxisRaw("Horizontal");
