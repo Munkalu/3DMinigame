@@ -463,7 +463,7 @@ MonoBehaviour:
     Controls: Press W/Up to tilt forward, A/Left to tilt left, D/Right to tilt right, and S/Down to tilt towards you.
 
 
-    Rules: You have 3 lives and 2 minutes to tilt the ball from the top left corner to the bottom right corner while collecting seeds and dodging holes along the way. If you fall into a hole you will respawn at your most recent checkpoint.'
+    Rules: You have 3 lives and 2 minutes to tilt the ball from the top left corner to the bottom right corner while collecting seeds and dodging holes along the way. If you fall into a hole you will respawn at your most recent checkpoint. There are 3 stars you can earn, 1 for winning, 1 for collecting all the seeds, and 1 for beating level 1 with 30 secs remaining or for beating level 2 with 45 secs left.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -254.50516, y: 0, z: -272.47375, w: -368.2793}
+  m_margin: {x: -418.73438, y: 0, z: -464.8125, w: -368.2793}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
