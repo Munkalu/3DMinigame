@@ -23,4 +23,12 @@ public class BoardTilt : MonoBehaviour
         currentZ = Mathf.MoveTowards(currentZ, targetZ, tiltSpeed*Time.fixedDeltaTime);
         rb.MoveRotation(Quaternion.Euler(currentX, 0f, currentZ));
     }
+    public void ResetTilt(){
+        currentX =0;
+        currentZ = 0;
+        targetX = 0;
+        targetZ = 0;
+        rb.rotation = Quaternion.identity;
+        transform.rotation = Quaternion.identity;
+    }
 }

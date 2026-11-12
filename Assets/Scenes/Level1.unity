@@ -14801,6 +14801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6f989075fe2e1b4397b82358aeed49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallController
+  board: {fileID: 730958697}
 --- !u!1 &1432695458
 GameObject:
   m_ObjectHideFlags: 0
@@ -20073,6 +20074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6f989075fe2e1b4397b82358aeed49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallController
+  board: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

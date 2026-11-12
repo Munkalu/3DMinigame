@@ -3,20 +3,29 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     Rigidbody rb;
-    Vector3 respawnPoint;
+    Vector3 startPoint;
+    [SerializeField] BoardTilt board;
+    Transform checkpoint;
     void Start()
     {
-        respawnPoint = transform.position;
+        startPoint = transform.position;
         rb = GetComponent<Rigidbody>();
     }
 
-    public void SetCheckPoint(Vector3 point)
+    public void SetCheckPoint(Transform point)
     {
-        respawnPoint = point;
+        checkpoint = point;
     }
     public void Respawn(){
+        board.ResetTilt();
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
-        transform.position = respawnPoint;
+        if(checkpoint != null){
+            transform.position = checkpoint.position + Vector3.up*0.5f;
+        }
+        else{
+            transform.position = startPoint;
+        }
+        
     }
 }

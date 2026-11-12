@@ -457,10 +457,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Goal: Make it to the nest
+  m_text: 'Goal: Make it to the nest, collect all 8 seeds, and try to be as fast as possible.
 
 
-    Controls: Press W/Up to tilt forward, A/Left to tilt left, D/Right to tilt right, and S/Down to tilt towards you
+    Controls: Press W/Up to tilt forward, A/Left to tilt left, D/Right to tilt right, and S/Down to tilt towards you.
 
 
     Rules: You have 3 lives and 2 minutes to tilt the ball from the top left corner to the bottom right corner while collecting seeds and dodging holes along the way. If you fall into a hole you will respawn at your most recent checkpoint.'
