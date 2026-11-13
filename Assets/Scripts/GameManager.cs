@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int maxLives = 3;
     [SerializeField] float runLength = 120f;
     [SerializeField] float targetTime = 45f;
+    [SerializeField] int pointsPerSeed = 100;
     int seedsCollected;
     int totalSeeds;
     public static  int stars;
@@ -88,5 +89,6 @@ public class GameManager : MonoBehaviour
     }
     public void AddSeed(){
         seedsCollected++;
+        Score += pointsPerSeed;
     }
 }

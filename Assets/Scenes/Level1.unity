@@ -4072,7 +4072,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4cdb59923f2828d40884180a90b61b2b, type: 2}
+  - {fileID: 2100000, guid: edd30dbeeb2acb940827fd2bda7fbca3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4116,6 +4116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d21d835239cd10e479208647bb0ae0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
+  flagRenderer: {fileID: 0}
 --- !u!1 &507264182
 GameObject:
   m_ObjectHideFlags: 0
@@ -18930,6 +18931,7 @@ MonoBehaviour:
   maxLives: 3
   runLength: 120
   targetTime: 45
+  pointsPerSeed: 100
 --- !u!1 &1962692790
 GameObject:
   m_ObjectHideFlags: 0
@@ -20253,7 +20255,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -20330,6 +20332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d21d835239cd10e479208647bb0ae0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
+  flagRenderer: {fileID: 500329771}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
